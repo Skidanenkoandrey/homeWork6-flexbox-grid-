@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../assets/fonts/Avenir/Avenir-Roman.woff2") format("woff2"), url("../assets/fonts/Avenir/Avenir-Roman.woff") format("woff"), url("../assets/fonts/Avenir/Avenir-Roman.ttf") format("truetype"), url("../assets/fonts/Avenir/Avenir-Roman.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../assets/fonts/Helvetic/HelveticaRegular.woff") format("woff"),url("../assets/fonts/Helvetic/HelveticaRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 70rem;
+    min-width: 20rem;
+    margin: 0 auto;
+}
