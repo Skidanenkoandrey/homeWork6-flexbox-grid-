@@ -351,7 +351,7 @@ ul {
 }
 
 .footer {
-    padding: 100px 0;
+    padding: 0 0 100px;
 }
 
 .footer-offer {
@@ -390,7 +390,7 @@ ul {
 
 .request-button_footer,
 .button-more_footer {
-    margin: 0;
+    margin: auto;
 }
 
 .button-more_footer {
@@ -504,4 +504,159 @@ ul {
 .social__link:hover {
     background: var(--secondary-color);
     transition: 0.2s;
+}
+
+.footer__info {
+    max-width: 300px;
+}
+
+.footer__copyright {
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .banner:after {
+        content: none;
+    }
+
+    .banner__description {
+        width: 100%;
+        margin: auto;
+    }
+
+    .banner__text {
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header-nav {
+        flex-direction: column;
+    }
+
+    .request-button {
+        margin: 20px auto auto;
+    }
+
+    .menu {
+        margin: 20px auto auto;
+    }
+
+    .advantage {
+        flex-direction: column;
+        padding: 20px 20px 50px;
+    }
+
+    .advantage__description,
+    .advantage__img {
+        max-width: none;
+        width: 100%;
+    }
+
+    .advantage__img {
+        max-width: 545px;
+    }
+
+    .row-features-bottom {
+        grid-gap: 80px 50px;
+    }
+
+
+    .testimonials {
+        padding: 20px;
+    }
+
+    .testimonials__cards {
+        padding: 20px;
+    }
+
+    .testimonials__title {
+        margin-bottom: 20px;
+    }
+
+    .testimonials-card__description {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-top: 20px;
+    }
+
+    .footer-offer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .request-button_footer {
+        margin: auto;
+    }
+
+    .footer-offer__item {
+        max-width: none;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+
+    .footer-nav {
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+        gap: 50px 30px;
+    }
+
+    .social {
+        justify-content: flex-start;
+    }
+
+    .social__item {
+        margin-right: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .testimonials-card-author {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-top: 15px;
+    }
+
+    .testimonials-card__description {
+        grid-row-start: 3;
+    }
+
+    .footer-nav {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        gap: 50px 30px;
+    }
+
+    .footer-nav__item {
+        border-bottom: 2px solid #f063b8;
+        padding-bottom: 10px;
+    }
+
+    .footer-offer__item_button {
+        flex-direction: column;
+    }
+
+    .request-button_footer {
+        margin: 20px auto auto;
+    }
+
+    .features-item {
+        text-align: center;
+    }
+
+    .features-item__img {
+        justify-self: center;
+    }
+
 }
